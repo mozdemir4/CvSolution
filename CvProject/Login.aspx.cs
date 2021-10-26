@@ -18,7 +18,7 @@ namespace CvProject
         protected void Button1_Click(object sender, EventArgs e)
         {
             var sorgu = from deger in ent.ADMIN where deger.KULLANICIADI == TextBox1.Text && deger.SIFRE == TextBox2.Text select deger;
-
+            //a
             if (sorgu.Any())
             {
                 Response.Redirect("AIstatistik.aspx");
